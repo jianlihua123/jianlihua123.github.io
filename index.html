@@ -3,66 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的个人主页</title>
+  <title>个人学术主页 - CV方向</title>
   <style>
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-      background: #0f172a;
-      color: #e2e8f0;
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: #e5e7eb;
     }
-
     .container {
-      max-width: 900px;
-      margin: 0 auto;
+      max-width: 1000px;
+      margin: auto;
       padding: 40px 20px;
+    }
+    h1, h2 {
+      color: #60a5fa;
+    }
+    .header {
       text-align: center;
     }
-
     .avatar {
       width: 120px;
-      height: 120px;
       border-radius: 50%;
-      border: 3px solid #38bdf8;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin: 10px 0;
-    }
-
-    p {
-      color: #94a3b8;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #38bdf8;
-      color: #0f172a;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .section {
-      margin-top: 50px;
-      text-align: left;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 15px;
-      border-radius: 12px;
       margin-bottom: 15px;
     }
-
-    footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #64748b;
+    .section {
+      margin-top: 40px;
+    }
+    .card {
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+    a {
+      color: #93c5fd;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -70,61 +46,79 @@
 
 <div class="container">
 
-  <!-- 头像 -->
-  <img class="avatar" src="https://via.placeholder.com/120" alt="头像">
+  <div class="header">
+    <img class="avatar" src="https://via.placeholder.com/120">
+    <h1>你的名字</h1>
+    <p>计算机视觉 / 深度学习 / AI研究员</p>
+    <p>
+      <a href="#">Google Scholar</a> | 
+      <a href="#">GitHub</a> | 
+      <a href="#">LinkedIn</a>
+    </p>
+  </div>
 
-  <!-- 标题 -->
-  <h1>你好，我是 John 👋</h1>
-  <p>一个热爱技术 / 产品 / 创业的人</p>
-
-  <!-- 按钮 -->
-  <a class="btn" href="https://github.com" target="_blank">我的 GitHub</a>
-
-  <!-- 关于我 -->
   <div class="section">
-    <h2>📌 关于我</h2>
+    <h2>👤 个人简介</h2>
     <div class="card">
-      <p>这里写你的介绍，比如：</p>
-      <ul>
-        <li>做什么工作</li>
-        <li>擅长什么</li>
-        <li>目前在做什么项目</li>
-      </ul>
+      <p>
+        这里写你的研究方向，例如：计算机视觉、目标检测、图像生成、多模态学习等。
+        简要介绍你的背景、兴趣和成果。
+      </p>
     </div>
   </div>
 
-  <!-- 项目 -->
   <div class="section">
-    <h2>🚀 我的项目</h2>
-
+    <h2>📄 发表论文</h2>
     <div class="card">
-      <h3>项目 1</h3>
-      <p>简单描述你的项目</p>
-    </div>
+      <p><b>Paper Title 1</b><br>
+      作者, 会议/期刊 (CVPR/ICCV/ECCV/NeurIPS), 年份<br>
+      <a href="#">[PDF]</a> <a href="#">[Code]</a></p>
 
-    <div class="card">
-      <h3>项目 2</h3>
-      <p>再写一个项目</p>
+      <p><b>Paper Title 2</b><br>
+      作者, 期刊/会议, 年份</p>
     </div>
-
   </div>
 
-  <!-- 联系方式 -->
   <div class="section">
-    <h2>📫 联系我</h2>
+    <h2>📜 专利</h2>
+    <div class="card">
+      <p>专利名称 - 授权号 - 年份</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🚀 项目</h2>
+    <div class="card">
+      <p><b>项目名称</b><br>
+      简要描述（例如：基于YOLO的目标检测系统）<br>
+      <a href="#">项目链接</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>💼 工作经历</h2>
+    <div class="card">
+      <p><b>公司/机构名称</b><br>
+      职位 | 时间<br>
+      工作内容描述</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎓 学术兼职</h2>
+    <div class="card">
+      <p>期刊审稿人 / 会议PC成员（CVPR/ICCV等）</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📫 联系方式</h2>
     <div class="card">
       <p>Email: your@email.com</p>
-      <p>微信 / Twitter / LinkedIn</p>
     </div>
   </div>
-
-  <!-- 底部 -->
-  <footer>
-    © 2026 Your Name
-  </footer>
 
 </div>
 
 </body>
 </html>
-
